@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+    <script>
+
+    function IsMobileNumber(mobile) {
+var mob = /^[1-9]{1}[0-9]{9}$/;
+var txtMobile = document.getElementById(mobile);
+if (mob.test(txtMobile.value) == false) {
+    alert("Please enter valid mobile number.");
+    txtMobile.focus();
+    return false;
+}
+return true;
+}
+
+
+    function password_validation(){
+
+    if(document.getElementById("good").value.length<4)
+
+	{
+		document.getElementById("pas").innerHTML="";
+		}
+    else if(document.getElementById("good").value.length<7)
+	{
+		document.getElementById("pas").innerHTML="your password is weak";
+		document.getElementById("pas").style.color="red";
+
+		}
+	else if(document.getElementById("good").value.length<9)
+	{
+		document.getElementById("pas").innerHTML="your password is good";
+		document.getElementById("pas").style.color="blue";
+		}
+	else if(document.getElementById("good").value.length<12)
+	{
+		document.getElementById("pas").innerHTML="your password is strong";
+		document.getElementById("pas").style.color="green";
+    }
+    }
+
+
+
+    </script>
+
+
+{% endblock head%}
+
+{% block content %}
+    <br><br><br><br><br><br><br>
+    <div class="container">
+<div class="col-lg-4"></div>
+    <div class="col-lg-4" >
+    <fieldset>
+    <form onsubmit="IsMobileNumber" action="{% url 'index' %}" method="post" >
+        {% csrf_token %}
+
+            <legend style="color: whitesmoke; font-family: Castellar; font-size: 2em"><b>sign up</b></legend>
+        <input type="text" name="fname" class="form-control" placeholder="FIRST NAME" required style="font-family: Castellar"><br>
+        <input type="text" name="lname" class="form-control" placeholder="last name" required style="font-family: Castellar"><br>
+        <input type="email" name="email" class="form-control" placeholder="EMAIL-ID" required ><br>
+            <label style="font-family: Castellar; color: whitesmoke";>date of birth</label>
+            <input type="date" name="dob" class="form-control" placeholder="date of birth" required style="font-family: Castellar"><br>
+
+        <input type="text" min="10" max="13" name="phone" class="form-control" id="mobile" placeholder="mobile" required style="font-family: Castellar"><br>
+
+            <input type="radio" name="gender" value="Male" style="margin-left: 50px; " checked>
+            <font style="font-family: Castellar;color: whitesmoke; font-size: large" >Male</font>
+            <input type="radio" name="gender" value="Female" style="margin-left: 50px;" checked>
+            <font style="font-family: Castellar;color: whitesmoke; font-size: large">feMale</font><br><br>
+
+            <input type="password" id="good" name="password" onkeyup="password_validation()" class="form-control" placeholder="password" required style="font-family: Castellar">
+            <h5 style="background-color: whitesmoke" id="pas"></h5>
+        <input class="btn btn-default form-control"  style="border-style:outset; text-shadow: 1px 2px 3px #666; color: #222222; font-family: Castellar" type="submit" value="sign up">
+
+        <br><br><br><br>
+
+
+
+    </form>
+    </fieldset>
+    </div></div>
+
+{% endblock content %}

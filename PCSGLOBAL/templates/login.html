@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock head %}
+
+{% block content %}
+    <br><br><br><br><br>
+    <div class="container" style="background-color: whitesmoke; height: 500px">
+    <div class="col-md-4"></div>
+    <div class="col-md-4" ><br><br><br><br><br>
+        <fieldset>
+            <legend style="font-weight: bolder;font-family: Castellar; background-color: #31b0d5; color: whitesmoke">LOG-in</legend>
+
+        <br><br>
+            <form action="{% url 'user_home' %}">
+                <input class="form-control" type="email" placeholder=" Enter E-mail"><br>
+                <input class="form-control" type="password" placeholder=" Enter Password"><br>
+            <button class="btn b btn-default form-control" style="font-family: Castellar; color: #1b6d85;font-size: larger" >Log-in</button><br><br>
+            <span><label style="font-size: x-small; color: #8c8c8c">New user</label>
+                <a href="{% url 'signup' %}" style="font-size: x-small;"><u>signup</u></a></span>
+                <span><a href="#" style="font-size: x-small; margin-left: 190px">Forgot Password</a></span>
+
+            </form>
+        </fieldset>
+    </div>
+
+    </div>
+    <br>
+{% endblock content %}

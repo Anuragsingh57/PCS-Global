@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block head %}
+
+    <style>
+    label{
+        font-family: Castellar;
+        color: #8c8c8c;
+    }
+
+
+    </style>
+
+{% endblock head%}
+
+{% block content %}
+    <br><br><br><br><br>
+
+    <div class="container" style="background-color: whitesmoke;height: 650px">
+    <center><h3 style="background-color: #31b0d5; color: whitesmoke; font-family: Castellar; font-weight: bolder;">Have Any Quary <br>Contact us</h3></center>
+    <br><br><br>
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4">
+        <form>
+            <label>Name</label>
+            <input type="text" placeholder="Full Name" class="form-control" required><br>
+            <label>email</label>
+            <input type="email" placeholder="Email Address" class="form-control" required><br>
+            <label>subject</label>
+            <input type="text" placeholder="Subject Name" class="form-control" required><br>
+            <label>message</label>
+            <textarea class="form-control" placeholder="Write the message" style="height: 120px"></textarea><br>
+            <button type="button" class="form-control" style="font-family: Castellar; font-weight: bolder;
+             background-color: #31b0d5; color: whitesmoke">send</button>
+
+        </form>
+    </div>
+
+    </div>
+    <br>
+{% endblock content%}

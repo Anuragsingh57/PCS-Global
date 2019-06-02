@@ -1,0 +1,239 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% block head %}
+{% endblock head %}
+    <meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PCS Global
+        {% block title %}
+
+        {% endblock title %}
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
+    <link href="{% static 'bs/css/bootstrap.min.css' %}" type="text/css" rel="stylesheet">
+    <script src="{% static 'bs/js/bootstrap.min.js' %}"></script>
+    <link href="{% static 'style.css' %}" type="text/css" rel="stylesheet">
+    <script src="{% static 'bs/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'jqueryfiles/animate-scroll.js' %}"></script>
+    <script src="{% static 'jqueryfiles/EaselPlugin.js' %}"></script>
+    <script src="{% static 'jqueryfiles/ScrollToPlugin.js' %}"></script>
+    <script src="{% static 'jqueryfiles/TweenMax.js' %}"></script>
+
+<style>
+    html,body {background-image: url("{% static 'images/photo-1501820434261-5bb046afcf6b.jpg' %}"); background-size: cover ;}
+    #n1{background-color: #31b0d5;  }
+    #envelop{color:whitesmoke;font-size: 20px;}
+
+    img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+    .glyphicon:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+</style>
+
+</head>
+
+<body>
+                            <!--  container top -->
+<div class="container-fluid" >
+    <div class="col-lg-12">
+        <div class="navbar navbar-inverse navbar-fixed-top container-fluid nav" id="n1">
+            <div class="col-lg-3"></div>
+            <ul class="nav navbar-nav navbar-btn">
+                <li class="glyphicon glyphicon-envelope" id="envelop"></li>
+                <li style="color: whitesmoke;font-size: 16px;">&nbsp; careers@pcsglobal.in &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li class="glyphicon glyphicon-earphone" style="color: whitesmoke;font-size: 20px"></li>
+                <li style="color: whitesmoke;font-size: 16px;">&nbsp; 033&nbsp;4001-2426 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li class="glyphicon glyphicon-phone" style="color: whitesmoke;font-size: 20px"></li>
+                <li style="color: whitesmoke;font-size: 16px;">&nbsp; +91-9123679909(Kolkata) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li class="glyphicon glyphicon-phone" style="color: whitesmoke;font-size: 20px"></li>
+                <li style="color: whitesmoke;font-size: 16px;">&nbsp; +91-6289345920(Bengaluru) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+
+<br><br><br>
+                                        <!--   navbar  -->
+
+
+<div class="col-lg-12" >
+    <header>
+    <div class="navbar navbar-inner"  style="background-color: whitesmoke; height: 100px; margin-top: -10px" >
+        <a href="{% url 'index' %}"><img id="logo" src="{% static 'images/pcs-logo-iso1.png' %}" alt="image"></a>
+        <ul class="nav navbar-nav navbar-btn pull-right" style="margin-top: 50px">
+            <li style="font-family: Castellar"><a href="{% url 'about' %}" style="text-shadow: 1px 2px 3px #666; color: gray">ABOUT US</a> </li>
+            <li style="font-family: Castellar"><a href="{% url 'data_science' %}" style="text-shadow: 1px 2px 3px #666; color: gray">data science & ai</a> </li>
+            <li style="font-family: Castellar"><a href="{% url 'portfolio' %}" style="text-shadow: 1px 2px 3px #666; color: gray">portfolio</a> </li>
+            <li style="font-family: Castellar"><a href="{% url 'industry' %}" style="text-shadow: 1px 2px 3px #666; color: gray">industry</a> </li>
+            <li style="font-family: Castellar"><a href="{% url 'products' %}" style="text-shadow: 1px 2px 3px #666; color: gray">products</a> </li>
+
+            <li style="font-family: Castellar"><a href="{% url 'careers' %}" style="text-shadow: 1px 2px 3px #666; color: gray">careers</a> </li>
+            <li style="font-family: Castellar"><a href="{% url 'services' %}" style="text-shadow: 1px 2px 3px #666; color: gray">services</a> </li>
+            <li style="font-family: Castellar"><a href="{% url 'contact' %}" style="text-shadow: 1px 2px 3px #666; color: gray">contact us</a> </li>
+
+                <a href="https://www.facebook.com/tpcsglobal/?fref=ts" target="_blank">
+                <img src="{% static 'images/facebook_logo.png' %}"></a>&nbsp;
+
+            <a href="http://pcs-global-pvt-ltd.blogspot.in/" target="_blank">
+                <img src="{% static 'images/blogspot_logo.jpg' %}"></a>&nbsp;&nbsp;&nbsp;
+
+
+                <a href="{% url 'login' %}"> <button type="button" class="btn btn-default btn-lg">
+                    Log in </button></a>
+
+        </ul>
+
+    </div></header>
+
+</div>
+
+                <!-- modal -->
+
+
+<div class="modal fade" role="dialog" id="m1" >
+<div class="modal-dialog ">
+<div class="modal-content">
+<div class="modal-header" >
+
+<h3 class="modal-title">Please Sign in </h3>
+
+</div>
+
+
+<div class="modal-body">
+
+<form>
+    {% csrf_token %}
+
+        <input class="form-control" placeholder="Enter email-id" type="email"/>
+
+        <input class="form-control" placeholder="Enter password" type="password"/><br />
+</form>
+
+<div class="modal-footer" >
+<input type="submit" class="btn btn-success" />
+</div></form>
+</div>
+</div>
+</div></div>
+
+
+
+{% block content %}
+
+{% endblock content %}
+                            <!-- Footer -->
+
+<footer>
+            <div class="container">
+                <div class="row">
+
+                     <div class="widget span4 col-lg-3">
+                         <b></b><h4 style="text-shadow: 1px 2px 3px #666;">Corporate Office&nbsp; <span style="color: whitesmoke;">(&nbsp;Kolkata&nbsp;)</span></h4>
+                       <p style="text-shadow: 1px 2px 3px #666;font-size: 15px;">Perennation Computer Solutions Global Private Limited<br>
+                           <i style="text-shadow: 1px 2px 3px #666;font-size: 15px;" class="fa fa-map-marker"></i> <span style="text-shadow: 1px 2px 3px #666;font-size: 15px;"> <b> Contact Office :</b></span> <br>Suite - 914 ,DN-51,Merlin Infinite,<br>Sector-V,Salt Lake ,Kolkata-91
+ <br>
+                     </p><p><i style="text-shadow: 1px 2px 3px #666;font-size: 15px;" class="fa fa-user"></i><span style="text-shadow: 1px 2px 3px #666;font-size: 15px;"><b>Phone :</b></span><span style="font-size: 15px;"><br> 033 4001-2426</span><br>
+                       </p><p><i style="text-shadow: 1px 2px 3px #666;font-size: 15px;" class="fa-fa-phone"></i><span style="text-shadow: 1px 2px 3px #666;font-size: 15px;"><b>Mobile :</b></span><span style="font-size: 15px;"><br> +91-8910666268/9123679909</span><br>
+
+                       </p><p><i class="fa fa-envelope" style="text-shadow: 1px 2px 3px #666;font-size: 15px;color: whitesmoke"></i><span style="text-shadow: 1px 2px 3px #666;font-size: 15px;"><b> Email :</b></span> <a style="color: #fff;font-size: 15px" href=""><span style="font-size: 15px;"><br>careers@pcsglobal.in</span></a></p>
+
+                    </div>
+
+
+                      <div class="widget span4 col-lg-3">
+                       <h4 style="text-shadow: 1px 2px 3px #666;">Corporate Office&nbsp; <span style="color: whitesmoke;">(&nbsp;Bengaluru&nbsp;)</span></h4>
+                       <p style="text-shadow: 1px 2px 3px #666;font-size: 15px;">Perennation Computer Solutions Global Private Limited<br>
+                           <i style="text-shadow: 1px 2px 3px #666;font-size: 15px;" class="fa fa-map-marker"></i> <span style="text-shadow: 1px 2px 3px #666;font-size: 15px;"> <b> Contact Office :</b></span> <br>1st floor , 196/A , 4th Cross Road , KHB Colony , 5th Block , Koramangala ,Bengaluru , Karnataka - 560095<br>
+
+                       </p><p><i style="text-shadow: 1px 2px 3px #666;font-size: 15px;" class="fa fa-phone"></i><span style="text-shadow: 1px 2px 3px #666;font-size: 15px;"><b>Mobile :</b></span><span style="font-size: 15px;"><br> +91-7022455044/7899170747/9007914325</span><br>
+
+                       </p><p><i class="fa fa-envelope" style="text-shadow: 1px 2px 3px #666;font-size: 15px;color: whitesmoke"></i><span style="text-shadow: 1px 2px 3px #666;font-size: 15px;"><b> Email :</b></span> <a style="color: #fff;font-size: 15px" href=""><span style="font-size: 15px;"><br>careers@pcsglobal.in  careers@pcsglobal.co.in(Bengaluru)</span></a></p>
+
+                    </div>
+                    <div class="widget span4 col-lg-3">
+                       <h4 style="text-shadow: 1px 2px 3px #666;">Sales Office&nbsp; <span style="color: whitesmoke;">(&nbsp;Bengaluru&nbsp;)</span></h4>
+                       <p style="text-shadow: 1px 2px 3px #666;font-size: 15px;">Perennation Computer Solutions Global Private Limited<br>
+                           <i style="text-shadow: 1px 2px 3px #666;font-size: 15px;" class="fa fa-map-marker"></i> <span style="text-shadow: 1px 2px 3px #666;font-size: 15px;"> <b> Contact Office :</b></span> <br>Oracle Gardens,2nd Cross Road,Raghavendra Nagar,Kalkere,Bengaluru<br>
+
+                       </p><p><i style="text-shadow: 1px 2px 3px #666;font-size: 15px;" class="fa fa-phone"></i><span style="text-shadow: 1px 2px 3px #666;font-size: 15px;"><b>Mobile :</b></span><span style="font-size: 15px;"><br> +91-7022455044/7899170747/9007914325</span><br>
+
+                       </p><p><i class="fa fa-envelope" style="text-shadow: 1px 2px 3px #666;font-size: 15px;color: whitesmoke"></i><span style="text-shadow: 1px 2px 3px #666;font-size: 15px;"><b> Email :</b></span> <a style="color: #fff;font-size: 15px" href=""><span style="font-size: 15px;"><br><br>careers@pcsglobal.co.in</span><span style="font-size: 15px;"><br>careers@pcsglobal.in</span></a></p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="footer-border"></div>
+                <div class="row">
+                    <div class="copyright span4 pull-left   ">
+                        <p style="color: white;text-shadow: 1px 2px 3px #666;">Perennation Computer Solutions Global Private Limited 2018<br>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    </div>
+                    <div class="social span8 pull-right">
+                        <a href="{% url 'admin' %}"><button type="button" style="padding-bottom: 20px;"><br>@</button> </a>
+                        <a href="https://www.facebook.com/tpcsglobal/?fref=ts" target="_blank"><br><img src="{% static 'images/facebook_logo_footer.png' %}"></a>
+                        <a href="https://www.facebook.com/tpcsglobal/?fref=ts" target="_blank"><br><img src="{% static 'images/LinkedIn_logo_initials_footer.png' %}"></a>
+
+                    <a href="https://www.youtube.com/channel/UCny5MFE3_PGRFFXn-fS2zmg/" target="_blank"><br><img src="{% static 'images/youtube_logo_footer.png' %}"></a>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

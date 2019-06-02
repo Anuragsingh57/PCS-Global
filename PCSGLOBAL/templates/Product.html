@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block head %}
+    <style>
+    .row {
+    margin-left: -20px}
+        .work {
+            margin-top: 40px;
+            padding-bottom: 20px;
+            }
+
+    i.custom30 {
+    font-size: 14em;
+    color: #122b40;
+    margin-top: 100px;}
+
+    {
+        font-size: xx-large;
+
+        color: #5d5d5d;
+    }
+
+.products {
+    font-family: Castellar ;
+    background-color: #31b0d5;
+    color: whitesmoke;
+}
+
+    i:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+    </style>
+
+{% endblock head %}
+
+{% block content %}
+<br><br><br><br><br>
+
+    <div class="container" style="background-color: whitesmoke">
+        <center><h4 class="products" style="font-weight: bolder; font-size: xx-large">Products</h4></center>
+        <div class="row">
+  <center>               <div class="col-md-4">
+
+                            <i class="fa fa-medkit custom30"></i>
+                    <h4 class="products">Hospital Management System</h4>
+
+
+                </div>
+                <div class="col-md-4">
+
+<i class="fa fa-pencil custom30"></i>
+                    <h4 class="products">School Management System</h4>
+
+
+                </div>
+                <div class="col-md-4">
+
+<i class="fa fa-bank custom30"></i>
+                    <h4 class="products">Banking Management System</h4>
+
+
+                </div>
+                <div class="col-md-4">
+                    <i class="fa fa-building custom30"></i>
+
+                    <h4 class="products">Office Management System</h4>
+
+
+                </div>
+                <div class="col-md-4">
+
+<i class="fa fa-money custom30"></i>
+                    <h4 class="products">Asset Management System</h4>
+
+
+                </div>
+                <div class="col-md-4">
+
+<i class="fa fa-users custom30"></i>
+                    <h4 class="products">HR Management System</h4>
+
+
+                </div>
+                <div class="col-md-4">
+
+<i class="fa fa-truck custom30"></i>
+                    <h4 class="products">Transport Management System</h4>
+
+
+                </div>
+                <div class="col-md-4">
+
+<i class="fa fa-th custom30"></i>
+
+
+                    <h4 class="products">Open source Portal Applications</h4>
+
+
+                </div>
+                <div class="col-md-4">
+<i class="fa fa-book custom30"></i>
+                    <h4 class="products">Publication Management System</h4>
+
+
+                </div>
+                <div class="col-md-4">
+
+<i class="fa fa-shopping-cart custom30"></i>
+                    <h4 class="products">Store Management System</h4>
+
+
+                </div>
+                <div class="col-md-4">
+
+<i class="fa fa-dollar custom30"></i>
+                    <h4 class="products">Financial Accounting</h4>
+
+
+                </div>
+                <div class="col-md-4">
+
+<i class="fa fa-bar-chart-o custom30"></i>
+                    <h4 class="products">Material Management</h4>
+                </div>
+
+  </center>
+
+            </div>
+
+
+    </div>
+<br>
+
+{% endblock content%}

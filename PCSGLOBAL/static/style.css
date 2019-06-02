@@ -1,0 +1,97 @@
+    .what-we-do .service{
+        padding-bottom: 23px;
+    background: #fff;
+    border-bottom: 2px solid #999999;
+    text-indent: 1em;
+    line-height: 1.25em;
+    height: 450px;
+
+
+    }
+
+    .what-we-do.p{    padding-bottom: 10px;
+    line-height: 24px;
+    text-align: justify;
+    margin-right: 5px;
+    margin-left: 3px;
+        font-size: small;
+        height: 250px;
+
+    }
+
+    .what-we-do.a{
+        padding: 5px 22px;
+    background: #4899EB;
+    color: #fff;
+    font-style: italic;
+    text-decoration: none;
+    }
+
+    .testimonial {
+        font-size: xx-large;
+        font-family: Castellar, cursive;
+        background-color: #4899EB;
+        color: whitesmoke;
+    }
+
+    .well{min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;}
+
+    footer {margin: 0 auto;
+    padding-bottom: 10px;
+    background-color: #0095b6;}
+
+    footer .widget {
+    margin-top: 20px;
+    text-align: left;}
+
+    .span4 {
+    width: 390px;}
+
+    footer .widget h4 {
+    margin-top: 20px;
+    font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;}
+
+    footer .widget p {
+    line-height: 24px;
+    color: #fff;}
+
+    footer .widget i {
+    padding-right: 7px;}
+
+
+    footer .footer-border {
+    margin-top: 30px;
+    border-top: 1px dashed #ddd;
+    }
+
+    footer .copyright {
+    margin-top: 15px;
+    text-align: left;
+    }
+
+    footer .social {
+    margin-top:10px;
+    text-align: right;
+
+    }
+
+    .span8 {
+    width: 620px;
+    }
+
+    footer .social a {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 0 0 025px;
+    vertical-align: middle;
+
+    }
+

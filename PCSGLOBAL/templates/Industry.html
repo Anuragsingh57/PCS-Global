@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block head %}
+<style>
+.indus{
+    background-color: #31b0d5;
+    color: whitesmoke;
+    font-family: Castellar, cursive;}
+
+
+</style>
+
+
+{% endblock head%}
+
+{% block content %}
+<br><br><br><br>
+<div class="container">
+<center><h3 style="background-color: #31b0d5;color: whitesmoke; font-family: Castellar;font-weight: bolder">Industry</h3></center>
+<div class="row"><br><br>
+    <div class="col-lg-6 img-responsive  thumbnail" style="background: none; border: none">
+        <img class="img-circle" src="{% static 'images/industry/Banking-and-Financial-Services.jpg' %}">
+    <div class="caption">
+        <center><h3 class="indus">Banking and Financial Service</h3></center>
+    </div>
+    </div>
+
+    <div class="col-lg-6 img-responsive  thumbnail" style="background: none; border: none">
+        <img class="img-circle" src="{% static 'images/industry/medical-hd-photo-1080p-hdwallwide.com_.jpg' %}">
+    <div class="caption">
+        <center><h3 class="indus">Health Care</h3></center>
+    </div>
+    </div>
+
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6 img-responsive  thumbnail" style="background: none; border: none">
+        <img class="img-circle" src="{% static 'images/industry/training.jpg' %}">
+    <div class="caption">
+        <center><h3 class="indus">Education and Corporate Training</h3></center>
+    </div>
+    </div>
+
+
+    <div class="col-lg-6 img-responsive  thumbnail" style="background: none; border: none">
+        <img class="img-circle" src="{% static 'images/industry/social_media.jpg' %}">
+    <div class="caption">
+        <center><h3 class="indus">Media and Information Service</h3></center>
+    </div>
+    </div>
+
+    <div class="col-lg-6 img-responsive  thumbnail" style="background: none; border: none">
+        <img class="img-circle" src="{% static 'images/industry/retail.jpeg' %}">
+    <div class="caption">
+        <center><h3 class="indus">Retail and Consumer Products</h3></center>
+    </div>
+    </div>
+
+
+    <div class="col-lg-6 img-responsive  thumbnail" style="background: none; border: none; margin-left:25%">
+        <img class="img-circle" src="{% static 'images/industry/training.jpg' %}">
+    <div class="caption">
+        <center><h3 class="indus">Education and Corporate Training</h3></center>
+    </div>
+    </div>
+
+    <div class="col-lg-6 img-responsive  thumbnail" style="background: none; border: none;">
+        <img class="img-circle" src="{% static 'images/industry/government.jpg' %}">
+    <div class="caption">
+        <center><h3 class="indus">Government</h3></center>
+    </div>
+    </div>
+
+     <div class="col-lg-6 img-responsive  thumbnail" style="background: none; border: none;">
+        <img class="img-circle" src="{% static 'images/industry/mobile.jpg' %}">
+    <div class="caption">
+        <center><h3 class="indus">Telecom</h3></center>
+    </div>
+    </div>
+
+
+</div>
+    </div>
+
+
+{% endblock content%}

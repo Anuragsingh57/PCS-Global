@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block head %}
+    <style>
+    .portfolio-container{background-color: whitesmoke;}
+
+
+    h3{background-color: #2e6da4;
+    }
+
+    p{font-size: large}
+
+    </style>
+
+
+
+
+
+
+
+{% endblock head%}
+
+
+
+{% block content %}<br><br><br><br>
+<div class="container">
+<div class="row">
+<center>
+    <h3 class="img-rounded" style="font-family: Castellar, cursive; font-size: xx-large;color: whitesmoke;font-weight: bolder;">portfolio</h3>
+</center>
+
+
+<div class="thumbnail">
+    <a href="#">
+        <img src="{% static 'images/portfolio/android_red_robot_shape_hi-tech_15010_1366x768.jpg' %}" style="height: 600px; width: fit-content"  data-animate-scroll='{"scaleX": "0.1","scaleY": "0.1","rotation": "940", "alpha": "2", "duration": "3"}' >
+
+    </a>
+
+    <div class="caption">
+    <p>We serve rapid application development in Android,
+        With Optimum Customer satisfaction.All the developers think fast and code faster.</p>
+</div>
+</div><br>
+<div class="thumbnail" >
+    <a href="#">
+    <img src="{% static 'images/portfolio/microsoft.jpg' %}" style="height: 600px; width: fit-content"  data-animate-scroll='{"scaleX": "0.1","scaleY": "0.1","rotation": "940", "alpha": "0", "duration": "3"}' >
+    </a>
+
+    <div class="caption">
+    <p>End to end application development in Microsoft Technologies.
+        Our whole development process is open ended.We value our customer feedback.</p>
+
+</div>
+</div><br>
+
+<div class="thumbnail">
+    <a href="#">
+    <img src="{% static 'images/portfolio/java.jpg' %}" style="height: 600px; width: fit-content"  data-animate-scroll='{"scaleX": "0.1","scaleY": "0.1","rotation": "940", "alpha": "0", "duration": "3"}' >
+
+    </a>
+
+    <div class="caption">
+    <p>We use latest technologies and developments and start applying into best framework.
+                                J2EE Based Technologies: <strong>Struts</strong>,<strong>Spring</strong>,<strong>JSF</strong>.</p>
+</div>
+</div><br>
+
+<div class="thumbnail" >
+    <a href="#">
+    <img src="{% static 'images/portfolio/PHP7.jpg' %}" style="height: 600px; width: fit-content"  data-animate-scroll='{"x": "-200","rotationY":"-150", "duration": "3"}' >
+    </a>
+
+    <div class="caption">
+    <p>We work conventional PHP platform as well as we use different PHP frameworks for rapid
+        application and Development.</p>
+
+    </div>
+    <br>
+</div>
+
+</div>
+</div>
+
+
+    <script>
+
+
+ $(document).animateScroll();
+
+</script>
+{% endblock content%}

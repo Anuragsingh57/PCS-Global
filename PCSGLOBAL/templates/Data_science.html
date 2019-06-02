@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block head %}
+
+<style>
+.data_science{background-color: whitesmoke;
+                padding-top: 50px;}
+
+
+.images1{
+    background-image: url("{% static 'images/data_science/real_analytics.jpg' %}"); height: 300px;
+}
+
+.images2{
+    background-image: url("{% static 'images/data_science/TextAnalysis4-1.png' %}"); height: 300px;
+}
+.images3{background-image: url("{% static 'images/data_science/telecom.png' %}"); height: 300px;
+}
+
+.images4{background-image: url("{% static 'images/data_science/business.png' %}"); height: 300px;
+}
+.images5{background-image: url("{% static 'images/data_science/learning.png' %}"); height: 300px;
+}
+
+.row{font-family: Castellar, cursive;
+    color: whitesmoke}
+h3 {
+background-color: #2e6da4;
+    font-size: xx-large;}
+
+
+.col-md-4:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+</style>
+
+{% endblock head %}
+
+{% block content %}
+    <br><br><br><br><br>
+<div class="container data_science">
+<center><h3 style="font-family: Castellar, cursive; font-size: xx-large;color: whitesmoke;font-weight: bolder;">data science & ai</h3></center>
+    <div class="row">
+        <div class="col-md-4">
+        <center>
+            <h3>Real Analytics</h3>
+        </center>
+            <div class="images1">
+
+            </div>
+        </div>
+
+        <div class="col-md-4">
+        <center>
+            <h3 class="font">text Analytics</h3>
+        </center>
+            <div class="images2">
+
+            </div>
+        </div>
+
+        <div class="col-md-4">
+        <center>
+            <h3 class="font">telecom Analytics</h3>
+        </center>
+            <div class="images3">
+
+            </div>
+        </div>
+
+        <div class="col-lg-2"></div>
+        <div class="col-md-4">
+        <center>
+            <h3 class="font">business consulting</h3>
+        </center>
+            <div class="images4">
+
+            </div>
+        </div>
+
+        <div class="col-md-4">
+        <center>
+            <h3 class="font">analytics learning</h3>
+        </center>
+            <div class="images5">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    <br>
+
+
+{% endblock content%}
